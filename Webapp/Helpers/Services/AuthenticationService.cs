@@ -26,10 +26,8 @@ public class AuthenticationService
             var result = await _userManager.CreateAsync(viewModel, viewModel.Password);
             if (result.Succeeded) 
             {
-                var user = await _userManager.Users.FirstOrDefaultAsync(x => x.Email == viewModel.Email);
-                await _userManager.AddToRoleAsync(user!, "user");
-
                 var address = await _addressService.GetOrCreateAsync(viewModel);
+                var user = await _userManager.Users.FirstOrDefaultAsync(x => x.Email == viewModel.Email);
                 return await _addressService.AddUserAddress(user!.Id, address.Id);
             }
         }

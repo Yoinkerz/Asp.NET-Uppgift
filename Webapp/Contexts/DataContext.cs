@@ -87,7 +87,22 @@ public class DataContext : IdentityDbContext<UserEntity>
         );
 
         builder.Entity<ProductTagEntity>().HasData(
-            new ProductTagEntity { ProductId = 1, TagId = 1 }    
+            new ProductTagEntity { ProductId = 1, TagId = 1 },
+            new ProductTagEntity { ProductId = 2, TagId = 2 },
+            new ProductTagEntity { ProductId = 3, TagId = 3 },
+            new ProductTagEntity { ProductId = 4, TagId = 1 },
+            new ProductTagEntity { ProductId = 5, TagId = 2 },
+            new ProductTagEntity { ProductId = 6, TagId = 3 },
+            new ProductTagEntity { ProductId = 7, TagId = 2 },
+            new ProductTagEntity { ProductId = 8, TagId = 1 },
+            new ProductTagEntity { ProductId = 9, TagId = 3 },
+            new ProductTagEntity { ProductId = 10, TagId = 1 },
+            new ProductTagEntity { ProductId = 11, TagId = 2 },
+            new ProductTagEntity { ProductId = 12, TagId = 2 },
+            new ProductTagEntity { ProductId = 13, TagId = 1 },
+            new ProductTagEntity { ProductId = 14, TagId = 3 },
+            new ProductTagEntity { ProductId = 15, TagId = 3 },
+            new ProductTagEntity { ProductId = 16, TagId = 2 }
         );
     }
 }

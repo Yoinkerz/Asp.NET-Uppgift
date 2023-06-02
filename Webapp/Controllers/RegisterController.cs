@@ -26,7 +26,7 @@ namespace Webapp.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(RegisterViewModel viewModel)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 if (!await _userManager.Users.AnyAsync(x => x.Email == viewModel.Email))
                 {

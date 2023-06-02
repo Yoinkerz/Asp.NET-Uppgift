@@ -57,10 +57,6 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Dell\\Desktop\\ASP .Net Uppgift\\Webapp\\Webapp\\wwwroot\\scss\\components\\_admin-posts.scss",
-      "PackagePath": "staticwebassets\\scss\\components\\_admin-posts.scss"
-    },
-    {
       "Id": "C:\\Users\\Dell\\Desktop\\ASP .Net Uppgift\\Webapp\\Webapp\\wwwroot\\scss\\components\\_allproducts.scss",
       "PackagePath": "staticwebassets\\scss\\components\\_allproducts.scss"
     },

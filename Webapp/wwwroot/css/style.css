@@ -939,61 +939,6 @@ footer .container {
   margin-bottom: 40px;
 }
 
-.admin-posts {
-  background-color: #FFFFFF;
-  padding: 40px 20px;
-}
-.admin-posts .container {
-  width: 100%;
-  height: auto;
-}
-.admin-posts .container .post-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-areas: "post-1" "post-2" "post-3";
-  gap: 40px;
-}
-@media (min-width: 768px) {
-  .admin-posts .container .post-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "post-1" "post-2 post-3";
-  }
-}
-@media (min-width: 992px) {
-  .admin-posts .container .post-grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "post-1 post-2 post-3";
-  }
-}
-.admin-posts .container .post-grid .post-1 {
-  grid-area: item-1;
-}
-.admin-posts .container .post-grid .post-2 {
-  grid-area: item-2;
-}
-.admin-posts .container .post-grid .post-3 {
-  grid-area: item-3;
-}
-.admin-posts .container .post-grid .post-title {
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  font-size: 18px;
-  color: #292929;
-}
-.admin-posts .container .post-grid .post-text {
-  font-family: "Poppins", sans-serif;
-  color: #292929;
-  font-size: 24px;
-  font-weight: 700;
-}
-.admin-posts .container .post-grid .post-origin {
-  margin-top: 20px;
-  font-family: "Roboto", sans-serif;
-  color: #636363;
-  font-size: 16px;
-  font-weight: 400;
-}
-
 .details {
   padding-top: 200px;
   padding-bottom: 25%;

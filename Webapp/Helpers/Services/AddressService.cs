@@ -33,7 +33,7 @@ public class AddressService
                 AddressId = addressId
             });
 
-            if (entity == null)
+            if (entity != null)
                 return true;
         }
         catch (Exception ex) { Debug.WriteLine(ex.Message); }

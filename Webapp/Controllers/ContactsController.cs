@@ -24,7 +24,7 @@ namespace Webapp.Controllers
             if(ModelState.IsValid)
             {
                 await _formRepository.AddAsync(viewModel);
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Home");
             }
 
             return View(viewModel);

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MzprLomqoOrsJxWcIGaVKUXUX5Fz9LHREX0gbaIIjLo=",
+  "Hash": "djq0UsvsKJXWgS23s+fM5CZl5G64GJQFKf5iqfxhx10=",
   "Source": "Webapp",
   "BasePath": "_content/Webapp",
   "Mode": "Default",
@@ -1273,23 +1273,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
-    },
-    {
-      "Identity": "C:\\Users\\Dell\\Desktop\\ASP .Net Uppgift\\Webapp\\Webapp\\wwwroot\\scss\\components\\_admin-posts.scss",
-      "SourceId": "Webapp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\Desktop\\ASP .Net Uppgift\\Webapp\\Webapp\\wwwroot\\",
-      "BasePath": "_content/Webapp",
-      "RelativePath": "scss/components/_admin-posts.scss",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\scss\\components\\_admin-posts.scss"
     },
     {
       "Identity": "C:\\Users\\Dell\\Desktop\\ASP .Net Uppgift\\Webapp\\Webapp\\wwwroot\\scss\\components\\_allproducts.scss",
