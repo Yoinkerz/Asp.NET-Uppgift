@@ -1,0 +1,38 @@
+.details {
+    padding-top: 200px;
+    padding-bottom: 25%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "img" "text-area";
+    gap: 20px;
+
+    .img-area {
+        position: relative;
+        left: 50%;
+
+        .img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .text-area {
+        width: 50%;
+
+        .title {
+            text-align: left;
+            font-family: $font-poppins;
+            font-weight: $font-weight-semibold;
+            font-size: 24px;
+            color: $color-dark-2;
+        }
+
+        .price {
+            margin-top: 20px;
+            font-family: $font-poppins;
+            font-weight: $font-weight-semibold;
+            font-size: 20px;
+            color: $color-dark-2;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+﻿@inject UserAdminService userAdminService
+
+<section class="backoffice">
+    <div class="container">
+        <div class="userlist">
+            @foreach (var user in await userAdminService.GetUsersAsync())
+            {
+                <div class="mb-5">
+                    <div>
+                        @user.Email
+                        (
+                        @foreach (var roleName in user.RoleNames)
+                        {
+                            <span>@roleName</span>
+                        }
+                        )
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

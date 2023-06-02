@@ -1,0 +1,22 @@
+﻿@inject ProductRepository productRepo
+
+<section class="allproducts">
+    <div class="product-grid">
+        @foreach (var product in await productRepo.GetAsync())
+        {
+            <div class="product">
+                <img src="\images\placeholders\501x430.svg" />
+                <div class="product-title"><a class="link" asp-action="details" asp-route-id="@product.Id">@product.Title</a></div>
+                <div class="price">$@product.Price</div>
+                <div>
+                    @foreach (var tag in product.ProductTags)
+                    {
+                        <span class="me-2">@tag.Tag.TagName</span>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</section>
+
+

@@ -1,0 +1,34 @@
+﻿@model int
+@inject ProductRepository productRepo 
+
+@{
+    var product = await productRepo.GetAsync(x => x.Id == Model);
+}
+
+@if (product != null)
+{
+    <section class="details">
+        <div class="img-area">
+            <img src="\images\placeholders\501x430.svg" />
+        </div>
+        <div class="text-area">
+            <div class="title">@product.Title</div>
+            <div>
+                @foreach (var tag in product.ProductTags)
+                {
+                    <span class="me-2">Tag: @tag.Tag.TagName</span>
+                }
+            </div>
+            <div>@product.Description</div>
+            <div class="price">$@product.Price</div>
+            <button class="btn btn-theme">Add to Cart</button>
+        </div> 
+    </section>
+}
+else
+{
+    <div>
+        Product does not exist...
+    </div>
+}
+
